@@ -25,11 +25,11 @@ int UserEnterNumerConsol()
 int ResultOutput(int numerN, int numerM)
 {
     if (numerN == 0)
-    { return numerM + 1; }
+    { return (numerM + 1); }
     else if (numerN != 0 && numerM == 0)
-    { return ResultOutput(numerN - 1, 1); }
+    { return (ResultOutput(numerN - 1, 1)); }
     if (numerN > 0 && numerM > 0)
-    { return ResultOutput(numerN - 1, ResultOutput(numerN, numerM - 1)); }
+    { return (ResultOutput(numerN - 1, ResultOutput(numerN, numerM - 1))); }
     else
-    { return ResultOutput(numerN, numerM); }
+    { return (ResultOutput(numerN, numerM)); }
 }
